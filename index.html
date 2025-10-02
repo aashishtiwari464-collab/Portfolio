@@ -1,5 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aashish Tiwari – Data Analyst | Horticulture & AI Innovator</title>
+    <meta name="description" content="Transforming data into actionable insights while bridging technology and nature." />
+    <meta name="theme-color" content="#0f5132" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <noscript>
+      <style>
+        .reveal { opacity: 1; transform: none; }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <div class="brand">
+          <span class="logo-circle">AT</span>
+          <span class="brand-text">Aashish Tiwari</span>
+        </div>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="home" class="hero section reveal" tabindex="-1">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            <span class="name">Aashish Tiwari</span>
+            <span class="title">Data Analyst | Horticulture & AI Innovator</span>
+          </h1>
+          <p class="tagline">“Transforming data into actionable insights while bridging technology and nature.”</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#portfolio">View My Projects</a>
+            <a class="btn outline" id="resumeBtn" href="/resume/Aashish_Tiwari_Resume.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="/assets/img/profile.svg" alt="Portrait of Aashish Tiwari" class="profile" />
+        </div>
+      </div>
+    </main>
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I hold a B.Sc. in Horticulture and formal training in Data Analytics
+          (Python, SQL, Power BI, Machine Learning). I am passionate about applying
+          AI to horticulture and sustainability, turning data into decisions that
+          grow real-world impact.
+        </p>
+        <blockquote>
+          “I combine domain knowledge in horticulture with analytical skills to extract meaningful insights from complex datasets.”
+        </blockquote>
+        <p>
+          I realized that just like plants, data needs nurturing. My goal is to help
+          organizations grow using data-driven strategies—by cultivating datasets,
+          pruning noise, and harvesting insights.
+        </p>
+      </div>
+    </section>
+    <section id="highlights" class="section accent reveal">
+      <div class="container">
+        <h2>Case Study Highlights</h2>
+        <div id="caseCarousel" class="carousel" aria-roledescription="carousel">
+          <button class="carousel-btn prev" aria-label="Previous">‹</button>
+          <div class="carousel-track" role="group" aria-label="Featured projects"></div>
+          <button class="carousel-btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="section reveal">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="filters" role="toolbar" aria-label="Project filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="General">General</button>
+          <button class="chip" data-filter="Horticulture">Horticulture</button>
+        </div>
+        <div id="projectGrid" class="grid"></div>
+      </div>
+    </section>
+    <section id="resume" class="section reveal">
+      <div class="container">
+        <h2>Resume</h2>
+        <div class="resume-grid">
+          <div>
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>
+                <strong>B.Sc. Horticulture</strong><br />
+                University / College – Year
+              </li>
+            </ul>
+            <h3>Certifications</h3>
+            <ul>
+              <li>Data Analytics (Python, SQL, Power BI)</li>
+              <li>Machine Learning Fundamentals</li>
+              <li>Horticulture Workshops</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Selected Projects</h3>
+            <ul id="resumeProjects"></ul>
+            <a class="btn small" href="/resume/Aashish_Tiwari_Resume.pdf" download>Download Full Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-layout">
+          <div>
+            <h3>Technical</h3>
+            <ul class="bars">
+              <li><span>Python</span><meter min="0" max="100" value="85"></meter></li>
+              <li><span>SQL</span><meter min="0" max="100" value="75"></meter></li>
+              <li><span>Power BI</span><meter min="0" max="100" value="80"></meter></li>
+              <li><span>Excel</span><meter min="0" max="100" value="90"></meter></li>
+              <li><span>Machine Learning</span><meter min="0" max="100" value="70"></meter></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Skill Tree Visualization</h3>
+            <div id="skillTree" class="skill-tree" aria-label="Skill tree visualization"></div>
+          </div>
+          <div>
+            <h3>Radar Overview</h3>
+            <canvas id="skillsRadar" width="360" height="360" aria-label="Skill radar chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="section reveal">
+      <div class="container">
+        <h2>Insights</h2>
+        <div id="blogList" class="grid posts"></div>
+      </div>
+    </section>
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="card">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send</button>
+            <p class="form-note">This opens your email client with a pre-filled message.</p>
+          </form>
+          <div class="card">
+            <h3>Connect</h3>
+            <ul class="links">
+              <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/">LinkedIn</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://github.com/">GitHub</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://www.kaggle.com/">Kaggle</a></li>
+              <li><a href="mailto:youremail@example.com">Email</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://wa.me/">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Aashish Tiwari. All rights reserved.</p>
+        <button id="printBtn" class="btn small">Download Portfolio PDF</button>
+      </div>
+    </footer>
+    <dialog id="projectModal" class="modal">
+      <article class="modal-content">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div id="modalBody"></div>
+      </article>
+    </dialog>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" type="module"></script>
+  </body>
+  </html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
