@@ -1,0 +1,95 @@
+[
+  {
+    "id": "roadmap",
+    "title": "AI Career Roadmap Generator",
+    "category": "General",
+    "featured": true,
+    "description": "Personalized AI-driven career path with visual skill map.",
+    "problem": "Freshers struggle to create a career roadmap.",
+    "solution": "AI-based generator using user profile to suggest skills and steps.",
+    "outcome": "Delivers step-by-step plan and visual dependencies.",
+    "tools": ["Python", "Pandas", "scikit-learn", "Power BI"],
+    "visuals": ["/assets/img/project-placeholder.svg"],
+    "links": {"github": "#", "demo": "#"}
+  },
+  {
+    "id": "plant-ml",
+    "title": "Plant Health Prediction using ML",
+    "category": "Horticulture",
+    "featured": true,
+    "description": "Detect diseases from leaf images, enable early intervention.",
+    "problem": "Early disease detection in crops is complex.",
+    "solution": "Image-based classification model with explainability.",
+    "outcome": ">85% accuracy; supports proactive treatment.",
+    "tools": ["Python", "scikit-learn"],
+    "visuals": ["/assets/img/project-placeholder.svg"],
+    "links": {"github": "#"}
+  },
+  {
+    "id": "yield-forecast",
+    "title": "Crop Yield Forecasting",
+    "category": "Horticulture",
+    "description": "Time-series forecasting for yield.",
+    "problem": "Planning requires yield forecasts.",
+    "solution": "Prophet/ARIMA ensemble.",
+    "outcome": "Improved forecast MAPE.",
+    "tools": ["Python", "Prophet", "ARIMA"],
+    "visuals": ["/assets/img/project-placeholder.svg"]
+  },
+  {
+    "id": "powerbi-sales",
+    "title": "Sales Analytics Dashboard",
+    "category": "General",
+    "description": "Interactive Power BI dashboard.",
+    "problem": "Leaders lack visibility.",
+    "solution": "KPI-focused BI dashboard.",
+    "outcome": "Faster decisions.",
+    "tools": ["Power BI", "DAX"],
+    "visuals": ["/assets/img/project-placeholder.svg"]
+  },
+  {
+    "id": "soil-analytics",
+    "title": "Soil Health Analytics",
+    "category": "Horticulture",
+    "description": "Soil metrics scoring & mapping.",
+    "problem": "Hard to compare soils.",
+    "solution": "Composite soil index.",
+    "outcome": "Prioritized interventions.",
+    "tools": ["Python", "GIS"],
+    "visuals": ["/assets/img/project-placeholder.svg"]
+  },
+  {
+    "id": "market-basket",
+    "title": "Market Basket Analysis",
+    "category": "General",
+    "description": "Association rules for cross-sell.",
+    "problem": "Low cross-sell.",
+    "solution": "Apriori-based bundles.",
+    "outcome": "Higher basket size.",
+    "tools": ["Python", "mlxtend"],
+    "visuals": ["/assets/img/project-placeholder.svg"]
+  },
+  {
+    "id": "irrigation-opt",
+    "title": "Smart Irrigation Optimization",
+    "category": "Horticulture",
+    "description": "Sensor-driven irrigation.",
+    "problem": "Water wastage.",
+    "solution": "ML-based scheduling.",
+    "outcome": "Saved water.",
+    "tools": ["Python", "IoT"],
+    "visuals": ["/assets/img/project-placeholder.svg"]
+  },
+  {
+    "id": "excel-ops",
+    "title": "Excel Automation Toolkit",
+    "category": "General",
+    "description": "Excel → Python automations.",
+    "problem": "Manual reports.",
+    "solution": "OpenPyXL scripts.",
+    "outcome": "Hours saved weekly.",
+    "tools": ["Python", "Excel"],
+    "visuals": ["/assets/img/project-placeholder.svg"]
+  }
+]
+
